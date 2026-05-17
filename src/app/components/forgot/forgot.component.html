@@ -1,0 +1,100 @@
+<section>
+  @if (steps == 1) {
+    <div class="m-auto w-50 my-5">
+      <h2>Forgot Password :</h2>
+      <form [formGroup]="forgotPasswords" (ngSubmit)="submitStep1()">
+        <input
+          formControlName="email"
+          type="email"
+          class="my-3 form-control"
+          placeholder="Enter your email..."
+        />
+        <app-alert
+          [formName]="forgotPasswords"
+          [controlName]="'email'"
+        ></app-alert>
+
+        <div class="d-flex justify-content-between">
+          <button
+            [disabled]="forgotPasswords.invalid || isBtnSubmit"
+            class="bg-main text-white btn"
+          >
+            @if (!isBtnSubmit) {
+              send code
+            } @else {
+              <i class="fa-solid fa-spinner fa-spin"></i>
+            }
+          </button>
+        </div>
+      </form>
+    </div>
+  } @else if (steps == 2) {
+    <div class="m-auto w-50 my-5">
+      <h2>verify Reset Code :</h2>
+      <form [formGroup]="verifyResetCode" (ngSubmit)="submitStep2()">
+        <input
+          formControlName="resetCode"
+          type="text"
+          class="my-3 form-control"
+          placeholder="Enter Reset Code..."
+        />
+        <app-alert
+          [formName]="verifyResetCode"
+          [controlName]="'resetCode'"
+        ></app-alert>
+
+        <div class="d-flex justify-content-between">
+          <button
+            [disabled]="verifyResetCode.invalid || isBtnSubmit"
+            class="bg-main text-white btn"
+          >
+            @if (!isBtnSubmit) {
+              verify
+            } @else {
+              <i class="fa-solid fa-spinner fa-spin"></i>
+            }
+          </button>
+        </div>
+      </form>
+    </div>
+  } @else if (steps == 3) {
+    <div class="m-auto w-50 my-5">
+      <h2>reset Password :</h2>
+      <form [formGroup]="resetPassword" (ngSubmit)="submitStep3()">
+        <input
+          formControlName="email"
+          type="email"
+          class="my-3 form-control"
+          placeholder="Enter your email..."
+        />
+        <app-alert
+          [formName]="resetPassword"
+          [controlName]="'email'"
+        ></app-alert>
+        <input
+          formControlName="newPassword"
+          type="password"
+          class="my-3 form-control"
+          placeholder="Enter your new Password..."
+        />
+        <app-alert
+          [formName]="resetPassword"
+          [controlName]="'newPassword'"
+        ></app-alert>
+
+        <div class="d-flex justify-content-between">
+          <button
+            [disabled]="resetPassword.invalid || isBtnSubmit"
+            class="bg-main text-white btn"
+          >
+            @if (!isBtnSubmit) {
+              Reset
+            } @else {
+              <i class="fa-solid fa-spinner fa-spin"></i>
+            }
+          </button>
+        </div>
+      </form>
+    </div>
+  }
+</section>
