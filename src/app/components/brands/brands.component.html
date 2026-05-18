@@ -1,1 +1,15 @@
-<p>brands works!</p>
+<div class="container my-5">
+  <h2>All Brands:</h2>
+  <div class="row">
+    @for (brand of allBrands; track $index) {
+      <div class="col-md-2">
+        <div class="product p-2">
+          <div>
+            <img [src]="brand.image" class="w-100" alt="" />
+            <h6 class="text-main">{{ brand.name }}</h6>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<section class="w-75 flex items-center m-auto my-5">
+  <h2>Shop Popular Category:</h2>
+  <owl-carousel-o [options]="customOptions">
+    @for (slide of categories; track slide.id) {
+      <ng-template carouselSlide [id]="slide.id">
+        <img
+          [src]="slide.image"
+          height="300px"
+          [alt]="slide.name"
+          [title]="slide.name"
+        />
+        <h3 class="font-bold m-auto text-center mt-2">{{ slide.name }}</h3>
+      </ng-template>
+    }
+  </owl-carousel-o>
+</section>

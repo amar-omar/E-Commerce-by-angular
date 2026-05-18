@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <img [src]="product?.imageCover" [alt]="product?.title" class="w-100" />
+    </div>
+    <div class="col-md-9 justify-center m-auto">
+      <h2>{{ product?.title }}</h2>
+      <p>{{ product?.description }}</p>
+      <span>{{ product?.category?.name }}</span>
+      <div class="d-flex my-3 justify-content-between items-center m-auto">
+        <p>Price: {{ product?.price }} EGP</p>
+        <p>rating : {{ product?.ratingsAverage }} </p>
+      </div>
+      <button
+        class="btn bg-main text-white text-center items-center w-100 my-2"
+      >
+        Add To Cart
+      </button>
+    </div>
+  </div>
+</div>

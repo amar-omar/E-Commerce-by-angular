@@ -2,7 +2,7 @@
   @if (steps == 1) {
     <div class="m-auto w-50 my-5">
       <h2>Forgot Password :</h2>
-      <form [formGroup]="forgotPasswords" (ngSubmit)="submitStep1()">
+      <form [formGroup]="forgotPassword" (ngSubmit)="submitStep1()">
         <input
           formControlName="email"
           type="email"
@@ -10,13 +10,13 @@
           placeholder="Enter your email..."
         />
         <app-alert
-          [formName]="forgotPasswords"
+          [formName]="forgotPassword"
           [controlName]="'email'"
         ></app-alert>
 
         <div class="d-flex justify-content-between">
           <button
-            [disabled]="forgotPasswords.invalid || isBtnSubmit"
+            [disabled]="forgotPassword.invalid || isBtnSubmit"
             class="bg-main text-white btn"
           >
             @if (!isBtnSubmit) {

@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from '../navbar/navbar.component';
 import { ProductsService } from '../../core/services/products.service';
 import { AuthService } from '../../core/services/auth.service';
 import { product } from '../../core/interfaces/product';
+import { CategorySliderComponent } from "../category-slider/category-slider.component";
+import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [NavbarComponent],
+  imports: [ CategorySliderComponent , RouterLink] ,
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

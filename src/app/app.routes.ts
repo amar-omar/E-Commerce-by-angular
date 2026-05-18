@@ -1,3 +1,4 @@
+import { DetailsComponent } from './components/details/details.component';
 import { ForgotComponent } from './components/forgot/forgot.component';
 import { Routes } from '@angular/router';
 import { authGuard } from './core/guards/auth.guard';
@@ -108,6 +109,14 @@ export const routes: Routes = [
             (m) => m.BrandsComponent,
           ),
         title: 'Brands - E-Commerce',
+      },
+      {
+        path: 'details/:id',
+        loadComponent: () =>
+          import('./components/details/details.component').then(
+            (m) => m.DetailsComponent,
+          ),
+        title: 'details - E-Commerce',
       },
       {
         path: '**',
