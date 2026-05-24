@@ -103,16 +103,19 @@ e-commerce web application built with Angular, providing seamless shopping exper
 - Safari (latest)
 - Edge (latest)
 - Opera (latest)
-## installation
---- bash
-gti clone https://github.com/amar-omar/E-Commerce-by-angular.git
+### 📦 Installation & Setup
+
+```bash
+# Clone the repository
+git clone [https://github.com/amar-omar/E-Commerce-by-angular.git]
+
+# Install dependencies
+npm install
+
+# Run development server
+ng serve for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 #This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
-
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
