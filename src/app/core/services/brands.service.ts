@@ -5,11 +5,14 @@ import { baseUrl } from '../environments/environment.local';
 import { Brand } from '../../core/interfaces/product';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class BrandsService {
-
   constructor(private _HttpClient: HttpClient) {}
-  getBrands = (): Observable<{ data: Brand[] }> => {
-    return this._HttpClient.get<{ data: Brand[] }>(baseUrl + 'api/v1/brands');
-  };}
+  getBrands = (): Observable<any> => {
+    return this._HttpClient.get(baseUrl + 'api/v1/brands');
+  };
+  getBrand = (id: string): Observable<any> => {
+    return this._HttpClient.get(baseUrl + `api/v1/brands/${id}`);
+  };
+}

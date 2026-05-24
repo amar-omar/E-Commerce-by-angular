@@ -1,0 +1,51 @@
+<div class="container my-5">
+  <!-- Loading State -->
+  @if (isLoading) {
+    <div class="text-center">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <p>Loading brand details...</p>
+    </div>
+  }
+
+  <!-- Brand Details - Using optional chaining -->
+  @if (!isLoading && brand) {
+    <div class="row">
+      <div class="col-md-4">
+        <img 
+          [src]="brand?.image" 
+          [alt]="brand?.name" 
+          class="img-fluid rounded shadow"
+        />
+      </div>
+      <div class="col-md-8">
+        <h2 class="mb-3">{{ brand?.name }}</h2>
+        <p class="text-muted">
+          <strong>Slug:</strong> {{ brand?.slug }}
+        </p>
+        <div class="row mt-4">
+          <div class="col-6">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">Created At</h6>
+                <p class="card-text">{{ brand?.createdAt  }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="card">
+              <div class="card-body">
+                <h6 class="card-subtitle mb-2 text-muted">Updated At</h6>
+                <p class="card-text">{{ brand?.updatedAt  }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <button class="btn btn-secondary mt-4" (click)="goBack()">
+          <i class="fas fa-arrow-left"></i> Back to Brands
+        </button> -->
+      </div>
+    </div>
+  }
+</div>

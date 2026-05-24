@@ -1,1 +1,16 @@
-<p>categories work</p>
+<div class="container my-5">
+    <h2>All Categories:</h2>
+    <div class="row">
+        @for (category of allCategories; track $index) {
+        <div class="col-md-2">
+            <div class="product p-2" [routerLink]="'/categoryDetails/' + category._id">
+            <div>
+                <img [src]="category.image" class="w-100 h-500" alt="" />
+                <h6 class="text-main">{{ category.name }}</h6>
+            </div>
+            </div>
+        </div>
+        }
+        
+    </div>
+</div>

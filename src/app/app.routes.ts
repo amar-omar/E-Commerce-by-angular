@@ -1,5 +1,4 @@
-import { DetailsComponent } from './components/details/details.component';
-import { ForgotComponent } from './components/forgot/forgot.component';
+import { CategoriesDetailsComponent } from './components/categories-details/categories-details.component';
 import { Routes } from '@angular/router';
 import { authGuard } from './core/guards/auth.guard';
 import { isLoggedInGuard } from './core/guards/is-logged-in.guard';
@@ -118,6 +117,24 @@ export const routes: Routes = [
           ),
         title: 'details - E-Commerce',
       },
+
+      {
+        path: 'brandDetails/:id',
+        loadComponent: () =>
+          import('./components/brand-details/brand-details.component').then(
+            (m) => m.BrandDetailsComponent,
+          ),
+        title: 'details - E-Commerce',
+      },
+      {
+        path: 'categoryDetails/:id',
+        loadComponent: () =>
+          import('./components/categories-details/categories-details.component').then(
+            (m) => m.CategoriesDetailsComponent,
+          ),
+        title: 'details - E-Commerce',
+      },
+
       {
         path: '**',
         loadComponent: () =>

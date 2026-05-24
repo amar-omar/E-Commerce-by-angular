@@ -38,12 +38,3 @@ export interface Brand {
   slug: string;
   image: string;
 }
-// Brand interface
-export interface Brand {
-  _id: string;
-  name: string;
-  slug: string;
-  image: string;
-  createdAt: string;  // ISO date string
-  updatedAt: string;  // ISO date string
-}

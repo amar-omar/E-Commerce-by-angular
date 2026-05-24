@@ -1,0 +1,9 @@
+// core/interfaces/brand.ts
+export interface categories {
+  _id: string;
+  name: string;
+  slug: string;
+  image: string;
+  createdAt: string; 
+  updatedAt: string;  
+}

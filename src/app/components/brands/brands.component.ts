@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { Brand, product } from '../../core/interfaces/product';
+import { Brand } from '../../core/interfaces/product';
 import { BrandsService } from '../../core/services/brands.service';
 
 @Component({
@@ -16,6 +16,8 @@ export class BrandsComponent {
   getBrands = () => {
     this._Brands.getBrands().subscribe({
       next: (res) => {
+        // console.log(res.data);
+        
         this.allBrands = res.data;
       },
       error: (error) => {
@@ -25,6 +27,5 @@ export class BrandsComponent {
   };
   ngOnInit(): void {
     this.getBrands();
-    // this.token.saveUserData();
   }
 }
