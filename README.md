@@ -15,7 +15,8 @@ e-commerce web application built with Angular, providing seamless shopping exper
 - Product details page with images, description, and specifications
 - Product ratings
 - ** image
- ![image her](login.png)
+ ![image her](<img width="2880" height="1578" alt="login" src="https://github.com/user-attachments/assets/cf59b6ef-3e2f-4052-ba1f-f19696d7af69" />
+)
 ### 🏷️ Categories & Brands
 - Browse products by category
 - Category-specific product listings
