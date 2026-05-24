@@ -1,6 +1,46 @@
-# ECommerce
-
+# 🛍️ E-Commerce Platform
+e-commerce web application built with Angular, providing seamless shopping experience with real-time product browsing, cart management, and secure payments.
+## Key Features
+- Add products to cart
+- Remove items from cart
+- Persistent cart storage using local storage
+- Real-time cart total calculations
+- View cart summary before checkout
+### 🔐 Authentication & User Management
+- User registration with email verification
+- Secure login with JWT authentication
+- Password reset functionality
+- Protected routes for authenticated users
+- ### 📦 Product Management
+- Product details page with images, description, and specifications
+- Product ratings
+- ** image
+ ![image her](<img width="2880" height="1578" alt="login" src="https://github.com/user-attachments/assets/ee70ecaf-e68b-47d0-b48e-56568d413c6d" />)
+### 🏷️ Categories & Brands
+- Browse products by category
+- Category-specific product listings
+- Category images and descriptions
+- Sub-category navigation
+- **Brands Section**
+- Shop by brand
+- Brand-specific product collections
+- Brand information pages
+- Brand logos and descriptions
+### 📱 Responsive Design
+- Mobile-first responsive layout
+- Optimized for all screen sizes (mobile, tablet, desktop)
+- Touch-friendly interface for mobile users
+- Adaptive images for different resolutions
+- Responsive navigation menu
+### ⚡ Performance Features
+- Lazy loading of modules and images
+- Optimized bundle size
+- Image optimization and compression
+- Caching strategy for better performance
+- Preloading of critical resources
+-  
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+
 
 ## Development server
 
