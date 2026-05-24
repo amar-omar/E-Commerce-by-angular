@@ -11,9 +11,6 @@ e-commerce web application built with Angular, providing seamless shopping exper
 - Secure login with JWT authentication
 - Password reset functionality
 - Protected routes for authenticated users
-- ### 📦 Product Management
-- Product details page with images, description, and specifications
-- Product ratings
 - ** image
  ![image her](https://github.com/user-attachments/assets/fef24b8b-e212-43fa-9414-3f3f32019a33)
 ![image her](https://github.com/user-attachments/assets/9a4302ed-fcd2-4139-9236-2a44ba916ef0)
@@ -49,10 +46,12 @@ e-commerce web application built with Angular, providing seamless shopping exper
 - Featured products
 **image:
 ![image her](https://github.com/user-attachments/assets/cc3b753e-f822-4bbb-876f-cf5374af62a6)
-- **Products Page**
+- ### 📦 Product Management
 - Grid/List view toggle
 - Product quick view modal
 - Pagination
+- Product details page with images, description, and specifications
+- Product ratings
 **image:
 ![image her](https://github.com/user-attachments/assets/bd833260-9efe-4962-b3ad-3353d9389a8c)
 - **Product Details**
