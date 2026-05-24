@@ -16,6 +16,7 @@ e-commerce web application built with Angular, providing seamless shopping exper
 - Product ratings
 - ** image
  ![image her](https://github.com/user-attachments/assets/fef24b8b-e212-43fa-9414-3f3f32019a33)
+![image her](https://github.com/user-attachments/assets/9a4302ed-fcd2-4139-9236-2a44ba916ef0)
 ### 🏷️ Categories & Brands
 - Browse products by category
 - Category-specific product listings
@@ -27,7 +28,8 @@ e-commerce web application built with Angular, providing seamless shopping exper
 - Brand information pages
 - Brand logos and descriptions
 **image:
-![image her]()
+![image her](https://github.com/user-attachments/assets/19f45b57-e7c4-427e-aaf3-ccb38bf728c3)
+![image her](https://github.com/user-attachments/assets/3553a897-c29d-4a37-b785-4e6e4889d278)
 ### 📱 Responsive Design
 - Mobile-first responsive layout
 - Optimized for all screen sizes (mobile, tablet, desktop)
@@ -40,8 +42,69 @@ e-commerce web application built with Angular, providing seamless shopping exper
 - Image optimization and compression
 - Caching strategy for better performance
 - Preloading of critical resources
--  
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
+### 📄 Pages & Sections
+#### Public Pages
+- **Home Page**
+- Hero banner/slider
+- Featured products
+**image:
+![image her](https://github.com/user-attachments/assets/cc3b753e-f822-4bbb-876f-cf5374af62a6)
+- **Products Page**
+- Grid/List view toggle
+- Product quick view modal
+- Pagination
+**image:
+![image her](https://github.com/user-attachments/assets/bd833260-9efe-4962-b3ad-3353d9389a8c)
+- **Product Details**
+- Image gallery with zoom
+- Quantity selector
+- Add to cart button
+- Product specifications
+**image:
+![image her](https://github.com/user-attachments/assets/2be66633-0781-456e-b656-6e89880d8812)
+- **Cart Page**
+- Cart items list
+- Quantity updater
+- Price calculations
+- Coupon code input
+- Checkout button
+**image:
+![image her]()
+- **Checkout Page**
+- Multi-step checkout process
+- Shipping address form
+- Payment method selection
+- Order summary
+- Place order confirmation
+**image:
+![image her]()
+### 🔧 Technical Features
+#### Architecture
+- **Standalone Components** - Modern Angular standalone architecture
+- Organized feature modules
+- **Lazy Loading** - Optimized loading strategy
+- **Shared Module** - Reusable components and directives
+#### State Management
+- **Services** - Centralized data management
+- **RxJS** - Reactive programming for state handling
+- **Local Storage** - Persistent user data
+- **Session Management** - User session handling
+#### API Integration
+- **RESTful API** - Clean API architecture
+- **HTTP Interceptors** - Request/response handling
+- **Error Handling** - Global error catching
+- **Loading Interceptor** - Automatic loading indicators
+#### Security
+- **JWT Authentication** - Secure token-based auth
+- **Route Guards** - Protected route access
+### 🌐 Browser Support
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Opera (latest)
+
+#This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.17.
 
 
 ## Development server
