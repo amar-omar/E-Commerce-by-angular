@@ -87,12 +87,12 @@ export const routes: Routes = [
         title: 'Orders - E-Commerce',
       },
       {
-        path: 'wishlist',
+        path: 'footer',
         loadComponent: () =>
-          import('./components/wishlist/wishlist.component').then(
-            (m) => m.WishlistComponent,
+          import('./components/footer/footer.component').then(
+            (m) => m.FooterComponent,
           ),
-        title: 'Wishlist - E-Commerce',
+        title: 'Footer - E-Commerce',
       },
       {
         path: 'brands',

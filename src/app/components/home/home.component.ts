@@ -6,11 +6,10 @@ import { CategorySliderComponent } from '../category-slider/category-slider.comp
 import { RouterLink } from '@angular/router';
 import { CartService } from '../../core/services/cart.service';
 import { ToastrService } from 'ngx-toastr';
-
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CategorySliderComponent, RouterLink],
+  imports: [CategorySliderComponent, RouterLink ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

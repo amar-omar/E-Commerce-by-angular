@@ -1,16 +1,39 @@
 <div class="container my-5">
-  <h2>All Brands:</h2>
-  <div class="row">
+  <!-- Page Header -->
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="fw-bold">
+      <i class="fas fa-tags text-main me-2"></i>All Brands
+    </h2>
+    <span class="badge bg-main text-white rounded-pill px-3 py-2">
+      {{ allBrands.length }} Brands
+    </span>
+  </div>
+
+  <!-- Brands Grid -->
+  <div class="row g-4">
     @for (brand of allBrands; track $index) {
-      <div class="col-md-2">
-        <div class="product p-2" [routerLink]="'/brandDetails/' + brand._id">
-          <div>
-            <img [src]="brand.image" loading="lazy" class="w-100" alt="" />
-            <h6 class="text-main">{{ brand.name }}</h6>
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+        <div
+          class="brand-card p-3 text-center cursor-pointer"
+          [routerLink]="'/brandDetails/' + brand._id"
+        >
+          <!-- Brand Logo Container -->
+          <div class="brand-image-wrapper mb-3">
+            <img
+              [src]="brand.image"
+              loading="lazy"
+              class="brand-image"
+              alt="{{ brand.name }}"
+            />
           </div>
+          
+          <!-- Brand Name -->
+          <h6 class="brand-name text-truncate mb-0">
+            {{ brand.name }}
+          </h6>
+
         </div>
       </div>
     }
-    
   </div>
 </div>

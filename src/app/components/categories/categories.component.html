@@ -1,23 +1,46 @@
 <div class="container my-5">
-  <h2>All Categories:</h2>
-  <div class="row">
+  <!-- Page Header -->
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="fw-bold">
+      <i class="fas fa-th-large text-main me-2"></i>All Categories
+    </h2>
+    <span class="badge bg-main text-white rounded-pill px-3 py-2">
+      {{ allCategories.length }} Categories
+    </span>
+  </div>
+
+  <!-- Categories Grid -->
+  <div class="row g-4">
     @for (category of allCategories; track $index) {
-      <div class="col-md-2">
+      <div class="col-6 col-sm-4 col-md-3 col-lg-2">
         <div
-          class="product p-2"
+          class="category-card p-3 text-center cursor-pointer"
           [routerLink]="'/categoryDetails/' + category._id"
         >
-          <div>
+          <!-- Image Container -->
+          <div class="category-image-wrapper mb-2">
             <img
               [src]="category.image"
               loading="lazy"
-              class="w-100 h-500"
-              alt=""
+              class="category-image"
+              alt="{{ category.name }}"
             />
-            <h6 class="text-main">{{ category.name }}</h6>
           </div>
+          
+          <!-- Category Name -->
+          <h6 class="category-name text-truncate mb-0">
+            {{ category.name }}
+          </h6>
         </div>
       </div>
     }
   </div>
+
+  <!-- Empty State -->
+  @if (allCategories.length === 0) {
+    <div class="text-center py-5">
+      <i class="fas fa-folder-open fa-3x text-muted mb-3"></i>
+      <p class="text-muted">No categories available</p>
+    </div>
+  }
 </div>
