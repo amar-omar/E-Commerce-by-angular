@@ -30,6 +30,8 @@ export interface Category {
   name: string;
   slug: string;
   image: string;
+  createdAt: string;
+  updatedAt: string;
 }
 
 export interface Brand {
@@ -37,4 +39,6 @@ export interface Brand {
   name: string;
   slug: string;
   image: string;
+  createdAt: string; // ISO date string
+  updatedAt: string;
 }

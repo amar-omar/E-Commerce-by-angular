@@ -5,6 +5,7 @@
       <ng-template carouselSlide [id]="slide.id">
         <img
           [src]="slide.image"
+          loading="lazy"
           height="300px"
           [alt]="slide.name"
           [title]="slide.name"

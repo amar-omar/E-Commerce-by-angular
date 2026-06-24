@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 /* You can add global styles to this file, and also import other style files */
+
+@import 'ngx-toastr/toastr';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,6 +18,15 @@
     --rating-color:#ffc908;
 }
 
+#toast-container {
+  position: fixed !important;
+  z-index: 999999 !important;
+}
+
+.toast-top-right {
+  top: 12px !important;
+  right: 12px !important;
+}
 body{
     font-family: var(--font-family) !important;
 }

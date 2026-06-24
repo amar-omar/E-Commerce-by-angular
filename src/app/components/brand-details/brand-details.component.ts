@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { BrandsService } from '../../core/services/brands.service';
 import { ActivatedRoute } from '@angular/router';
-import { Brand } from '../../core/interfaces/brand';
+import { Brand } from '../../core/interfaces/product';
 
 @Component({
   selector: 'app-brand-details',

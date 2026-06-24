@@ -1,1 +1,53 @@
-<p>cart works!</p>
+<div class="container w-100 px-2 px-sm-3 px-md-4">
+  <h2 class="mb-3 mb-md-4 fs-2 fs-md-1">Shop Cart:</h2>
+  <h4 class="text-green-300 mb-4 fs-5 fs-md-4">total cart price: {{ totalPrice }}</h4>
+  
+  <div class="row g-2 g-sm-3">
+    @for (item of allCarts; track $index) {
+      <div class="col-12">
+        <div class="cart-item d-flex flex-wrap align-items-center p-2 p-sm-3 border-bottom">
+          
+          <!-- Product Image -->
+          <div class="col-3 col-sm-2 col-md-2 col-lg-1 text-center">
+            <img 
+              [src]="item.product.imageCover" 
+              loading="lazy" 
+              alt="Product image"
+              class="img-fluid rounded"
+              style="max-width: 100%; height: auto;"
+            />
+          </div>
+
+          <!-- Product Details -->
+          <div class="col-9 col-sm-6 col-md-6 col-lg-7 ps-2 ps-sm-3">
+            <p class="mb-1 fw-semibold product-title" style="font-size: clamp(0.8rem, 1.5vw, 1rem);">
+              {{ item.product.title }}
+            </p>
+            <h4 class="fs-6 fs-md-5 mb-1">Price: {{ item.price }}</h4>
+            <h4 class="fs-6 fs-md-5 mb-1">Qty: {{ item.count }}</h4>
+            
+            <button class="btn btn-danger btn-sm mt-1" (click)="removeFromCart(item)">
+              <i class="fa-regular fa-trash-can"></i> 
+              <span class="d-none d-sm-inline"> Remove</span>
+            </button>
+          </div>
+          
+          <!-- Quantity Controls -->
+          <div class="col-12 col-sm-4 col-md-4 col-lg-3 mt-2 mt-sm-0 d-flex align-items-center justify-content-start justify-content-sm-end gap-2 gap-md-3">
+            <span class="cursor-pointer" (click)="decreaseQuantity(item)">
+              <i class="fa-solid fa-minus bg-danger text-white rounded-circle p-1 p-md-2" style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;"></i>
+            </span>
+            
+            <span class="fw-bold fs-5 fs-md-4 mx-1">{{ item.count }}</span>
+            
+            <span class="cursor-pointer" (click)="increaseQuantity(item)">
+              <i class="fa-solid fa-plus bg-success text-white rounded-circle p-1 p-md-2" style="width: 30px; height: 30px; display: flex; align-items: center; justify-content: center;"></i>
+            </span>
+          </div>
+          
+        </div>
+      </div>
+    }
+  </div>
+  <hr class="mt-3" />
+</div>

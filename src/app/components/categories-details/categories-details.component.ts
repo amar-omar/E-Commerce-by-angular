@@ -2,7 +2,6 @@ import { Category } from './../../core/interfaces/product';
 import { Component, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CategoriesService } from '../../core/services/categories.service';
-import { categories } from '../../core/interfaces/categories';
 
 @Component({
   selector: 'app-categories-details',
@@ -12,7 +11,7 @@ import { categories } from '../../core/interfaces/categories';
   styleUrl: './categories-details.component.scss'
 })
 export class CategoriesDetailsComponent {
-  Category: categories | null = null; // ✅ Changed to allow null
+  Category: Category | null = null; // ✅ Changed to allow null
   isLoading = true;
 
   private readonly _ActivatedRoute = inject(ActivatedRoute);

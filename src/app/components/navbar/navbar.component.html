@@ -1,8 +1,16 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary py-3">
-  <div class="container">
-    <a class="navbar-brand" routerLink="/home">
-      <img src="assets/images/freshcart-logo.svg" alt="logo" />
+<nav class="navbar navbar-expand-lg bg-body-tertiary py-2 py-md-3">
+  <div class="container-fluid px-2 px-sm-3 px-md-4">
+    <!-- Logo -->
+    <a class="navbar-brand p-0" routerLink="/home">
+      <img 
+        src="assets/images/freshcart-logo.svg" 
+        alt="logo" 
+        class="img-fluid"
+        style="max-height: 35px; width: auto;"
+      />
     </a>
+    
+    <!-- Toggler Button - Fixed -->
     <button
       class="navbar-toggler"
       type="button"
@@ -14,7 +22,10 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="navbar-collapse collapse" id="navbarSupportedContent">
+    
+    <!-- Navbar Content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Left Navigation Links -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link" routerLink="/home" routerLinkActive="navbar-active">Home</a>
@@ -30,32 +41,39 @@
         </li>
       </ul>
 
+      <!-- Right Navigation Links -->
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <!-- Wishlist -->
         <li class="nav-item">
-          <a class="nav-link position-relative" routerLink="/wishlist" routerLinkActive="navbar-active">
-            Wishlist <i class="fa-regular fa-heart"></i>
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-              9
-              <span class="visually-hidden">unread messages</span>
-            </span>
+          <a class="nav-link position-relative d-flex align-items-center gap-1 gap-sm-2" 
+             routerLink="/wishlist" 
+             routerLinkActive="navbar-active">
+            <span class="d-none d-sm-inline">Wishlist</span>
+            <i class="fa-regular fa-heart"></i>
           </a>
         </li>
+        
+        <!-- Cart -->
         <li class="nav-item">
-          <a class="nav-link position-relative" routerLink="/cart" routerLinkActive="navbar-active">
-            Cart <i class="fa-solid fa-cart-arrow-down"></i>
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-              9
-              <span class="visually-hidden">unread messages</span>
-            </span>
+          <a class="nav-link position-relative d-flex align-items-center gap-1 gap-sm-2" 
+             routerLink="/cart" 
+             routerLinkActive="navbar-active">
+            <span class="d-none d-sm-inline">Cart</span>
+            <i class="fa-solid fa-cart-arrow-down"></i>
           </a>
         </li>
+        
+        <!-- Logout -->
         <li class="nav-item">
-          <!-- Change from routerLink to button with click event -->
-          <button class="nav-link btn btn-link" (click)="onLogout()" style="cursor: pointer; background: none; border: none;">
-            Logout <i class="fa-solid fa-sign-out-alt"></i>
+          <button 
+            class="nav-link btn btn-link d-flex align-items-center gap-1 gap-sm-2" 
+            (click)="onLogout()" 
+            style="cursor: pointer; background: none; border: none; text-decoration: none;">
+            <span class="d-none d-sm-inline">Logout</span>
+            <i class="fa-solid fa-sign-out-alt"></i>
           </button>
         </li>
       </ul>
     </div>
   </div>
-</nav>
+</nav>  

@@ -38,6 +38,9 @@ export class AuthService {
     // Navigate to signin page
     this.router.navigate(['/signin']);
   }
+    getToken(): string | null {
+    return localStorage.getItem('token');
+  }
   forgotPasswords = (email: any): Observable<any> => {
     return this._HttpClient.post(baseUrl + 'api/v1/auth/forgotPasswords', email);
   };

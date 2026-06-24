@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { categories } from '../../core/interfaces/categories';
 import { CategoriesService } from '../../core/services/categories.service';
+import { Category } from '../../core/interfaces/product';
 
 @Component({
   selector: 'app-categories',
@@ -11,7 +11,7 @@ import { CategoriesService } from '../../core/services/categories.service';
   styleUrl: './categories.component.scss'
 })
 export class CategoriesComponent {
-  allCategories: categories[] = [];
+  allCategories: Category[] = [];
   constructor(private _Categories: CategoriesService) {}
   getCategories = () => {
     this._Categories.getCategories().subscribe({

@@ -69,14 +69,7 @@ export const routes: Routes = [
           ),
         title: 'Products - E-Commerce',
       },
-      {
-        path: 'product/:id',
-        loadComponent: () =>
-          import('./components/product-details/product-details.component').then(
-            (m) => m.ProductDetailsComponent,
-          ),
-        title: 'Product Details - E-Commerce',
-      },
+    
       {
         path: 'cart',
         loadComponent: () =>

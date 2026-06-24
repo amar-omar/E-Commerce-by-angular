@@ -3,9 +3,14 @@
   <div class="row">
     @for (product of allProducts; track $index) {
       <div class="col-md-2">
-        <div class="product p-2" >
+        <div class="product p-2">
           <div [routerLink]="'/details/' + product.id">
-            <img [src]="product.imageCover" class="w-100" alt="" />
+            <img
+              [src]="product.imageCover"
+              loading="lazy"
+              class="w-100"
+              alt=""
+            />
             <h6 class="text-main">{{ product.category.name }}</h6>
             <h5 class="fw-bold">
               {{ product.title.split(" ").slice(0, 2).join(" ") }} ...
@@ -19,6 +24,7 @@
             </div>
           </div>
           <button
+            (click)="addToCart(product.id)"
             class="btn bg-main text-white text-center items-center w-100 my-2"
           >
             Add To Cart

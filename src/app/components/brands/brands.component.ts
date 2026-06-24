@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { Brand } from '../../core/interfaces/product';
 import { BrandsService } from '../../core/services/brands.service';
+import { Brand } from '../../core/interfaces/product';
 
 @Component({
   selector: 'app-brands',
