@@ -13,8 +13,7 @@ e-commerce web application built with Angular, providing seamless shopping exper
 - Protected routes for authenticated users
 - ** image
  ![image her](https://github.com/user-attachments/assets/fc820d43-ffe8-4d7e-bd86-c4aa1b434668)
-![image her](https://github.com/user-attachments/assets/686b0700-352a-41af-b0ec-e91a7bd89026/>
-)
+![image her](https://github.com/user-attachments/assets/686b0700-352a-41af-b0ec-e91a7bd89026)
 ### 🏷️ Categories & Brands
 - Browse products by category
 - Category-specific product listings
