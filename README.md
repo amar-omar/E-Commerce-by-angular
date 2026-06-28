@@ -45,7 +45,7 @@ e-commerce web application built with Angular, providing seamless shopping exper
 - Hero banner/slider
 - Featured products
 **image:
-![image her](https://github.com/user-attachments/assets/cc3b753e-f822-4bbb-876f-cf5374af62a6)
+![image her](https://github.com/user-attachments/assets/5642f485-26bc-4daa-a438-9771fd0e96f4)
 - ### 📦 Product Management
 - Grid/List view toggle
 - Product quick view modal
