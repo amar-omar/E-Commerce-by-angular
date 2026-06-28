@@ -25,8 +25,8 @@ e-commerce web application built with Angular, providing seamless shopping exper
 - Brand information pages
 - Brand logos and descriptions
 **image:
-![image her](https://github.com/user-attachments/assets/19f45b57-e7c4-427e-aaf3-ccb38bf728c3)
-![image her](https://github.com/user-attachments/assets/3553a897-c29d-4a37-b785-4e6e4889d278)
+![image her](https://github.com/user-attachments/assets/fa8309c9-b08f-4e58-ab76-86d078a83380)
+![image her](https://github.com/user-attachments/assets/d7c38401-3029-4c21-be01-9665bafe0199)
 ### 📱 Responsive Design
 - Mobile-first responsive layout
 - Optimized for all screen sizes (mobile, tablet, desktop)
