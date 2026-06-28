@@ -53,14 +53,14 @@ e-commerce web application built with Angular, providing seamless shopping exper
 - Product details page with images, description, and specifications
 - Product ratings
 **image:
-![image her](https://github.com/user-attachments/assets/bd833260-9efe-4962-b3ad-3353d9389a8c)
+![image her](https://github.com/user-attachments/assets/c8cf3e47-fe6b-406e-8b61-46a13fbe731b)
 - **Product Details**
 - Image gallery with zoom
 - Quantity selector
 - Add to cart button
 - Product specifications
 **image:
-![image her](https://github.com/user-attachments/assets/2be66633-0781-456e-b656-6e89880d8812)
+![image her](https://github.com/user-attachments/assets/20690167-fba3-4321-9982-a033b89a6e14)
 - **Cart Page**
 - Cart items list
 - Quantity updater
@@ -68,7 +68,7 @@ e-commerce web application built with Angular, providing seamless shopping exper
 - Coupon code input
 - Checkout button
 **image:
-![image her]()
+![image her](https://github.com/user-attachments/assets/0db6333c-24e9-4450-833e-0af8a1ddcbcd)
 - **Checkout Page**
 - Multi-step checkout process
 - Shipping address form
