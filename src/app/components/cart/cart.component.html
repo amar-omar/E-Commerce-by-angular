@@ -76,8 +76,13 @@
   </div>
   <div class="flex">
     <hr class="mt-3" />
-    <h4 class="text-green-300 mb-4 fs-5 fs-md-4">
-      total cart price: {{ totalPrice }}
-    </h4>
+    <div
+      class="d-flex justify-content-between align-items-center flex-column flex-md-row gap-2 gap-md-0"
+    >
+      <h4 class="text-green-300 mb-4 fs-5 fs-md-4">
+        total cart price: {{ totalPrice }}
+      </h4>
+      <button class="btn btn-success" routerLink="/checkout">checkout Now</button>
+    </div>
   </div>
 </div>

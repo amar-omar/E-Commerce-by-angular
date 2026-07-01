@@ -1,0 +1,21 @@
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.form-control {
+  border-radius: 12px;
+  padding: 12px 15px;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.2);
+}
+
+.btn {
+  border-radius: 12px;
+  font-weight: 600;
+}

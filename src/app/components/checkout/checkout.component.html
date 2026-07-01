@@ -1,0 +1,97 @@
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8 col-lg-6">
+      <div class="card shadow-lg border-0 rounded-4 p-4">
+        <h2 class="text-center fw-bold mb-4">Checkout 🚀</h2>
+
+        <form [formGroup]="checkoutForm" (ngSubmit)="submitOrder()">
+          <!-- Address -->
+          <div class="mb-3">
+            <label class="form-label fw-semibold"> Shipping Address </label>
+
+            <textarea
+              rows="3"
+              class="form-control"
+              formControlName="details"
+              placeholder="Street, Building, Apartment..."
+            >
+            </textarea>
+
+            @if (
+              checkoutForm.get("details")?.touched &&
+              checkoutForm.get("details")?.invalid
+            ) {
+              <small class="text-danger"> Address is required. </small>
+            }
+          </div>
+
+          <!-- City -->
+          <div class="mb-3">
+            <label class="form-label fw-semibold"> City </label>
+
+            <input
+              type="text"
+              class="form-control"
+              formControlName="city"
+              placeholder="Enter your city"
+            />
+
+            @if (
+              checkoutForm.get("city")?.touched &&
+              checkoutForm.get("city")?.invalid
+            ) {
+              <small class="text-danger"> City is required. </small>
+            }
+          </div>
+
+          <!-- Phone -->
+          <div class="mb-3">
+            <label class="form-label fw-semibold"> Phone Number </label>
+
+            <input
+              type="tel"
+              class="form-control"
+              formControlName="phone"
+              placeholder="01xxxxxxxxx"
+            />
+
+            @if (
+              checkoutForm.get("phone")?.touched &&
+              checkoutForm.get("phone")?.invalid
+            ) {
+              <small class="text-danger">
+                Enter a valid Egyptian phone number.
+              </small>
+            }
+          </div>
+
+          <!-- Payment -->
+          <div class="mb-4">
+            <label class="form-label fw-semibold d-block">
+              Payment Method
+            </label>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                value="cash"
+                formControlName="paymentMethod"
+              />
+
+              <label class="form-check-label"> Cash on Delivery </label>
+            </div>
+          </div>
+
+          <button
+          routerLink="/home"
+            class="btn btn-success w-100 py-2"
+            [disabled]="checkoutForm.invalid"
+          >
+            Place Order
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

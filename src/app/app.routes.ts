@@ -103,6 +103,14 @@ export const routes: Routes = [
         title: 'Brands - E-Commerce',
       },
       {
+        path: 'checkout',
+        loadComponent: () =>
+          import('./components/checkout/checkout.component').then(
+            (m) => m.CheckoutComponent,
+          ),
+        title: 'Checkout - E-Commerce',
+      },
+      {
         path: 'details/:id',
         loadComponent: () =>
           import('./components/details/details.component').then(

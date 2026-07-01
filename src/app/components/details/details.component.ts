@@ -12,7 +12,7 @@ import { product } from '../../core/interfaces/product';
   styleUrl: './details.component.scss',
 })
 export class DetailsComponent {
-  product!: product;
+  product?: product;
   isLoading: boolean = false; // For loading state
   private readonly _ActivatedRoute = inject(ActivatedRoute);
   private readonly _ProductsService = inject(ProductsService);
@@ -51,14 +51,14 @@ export class DetailsComponent {
     this.isLoading = true;
     this._CartService.AddToCart(this.product._id).subscribe({
       next: (response) => {
-        console.log('Product added to cart successfully', response);
+        // console.log('Product added to cart successfully', response);
         this.isLoading = false;
          
         // Optional: Show success toast/notification
         // Optional: Update cart count in header
       },
       error: (error) => {
-        console.error('Failed to add product to cart:', error);
+        // console.error('Failed to add product to cart:', error);
         this.isLoading = false;
         // Optional: Show error toast/notification
       },
