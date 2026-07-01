@@ -76,7 +76,7 @@ e-commerce web application built with Angular, providing seamless shopping exper
 - Order summary
 - Place order confirmation
 **image:
-![image her]()
+![image her](https://github.com/user-attachments/assets/71c68ecb-3af6-4905-8de3-d1b8978dc73a)
 ### 🔧 Technical Features
 #### Architecture
 - **Standalone Components** - Modern Angular standalone architecture
