@@ -29,6 +29,7 @@ export class SigninComponent {
       this.authService.signin(this.loginForm.value).subscribe({
         next: (res) => {
           if (res.message == 'success') {
+            console.log(res);
             localStorage.setItem('token', res.token);
             this.authService.saveUserData();
             this.router.navigate(['/home']);
@@ -36,7 +37,7 @@ export class SigninComponent {
           }
         },
         error: (err: HttpErrorResponse) => {
-          // console.log(err.error.message);
+          console.log(err.error.message);
           this.isBtnSubmit = false;
           this.errorMessage = err.error.message;
         },

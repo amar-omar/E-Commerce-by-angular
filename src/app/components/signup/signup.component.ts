@@ -7,12 +7,11 @@ import { confirmPassword } from '../../shared/utils/confirm-password.utils';
 import { HttpErrorResponse } from '@angular/common/http';
 import { NgClass } from '@angular/common';
 import { AlertComponent } from '../../shared/ui/alert/alert.component';
-import { AuthNavbarComponent } from "../auth-navbar/auth-navbar.component";
 
 @Component({
   selector: 'app-signup',
   standalone: true,
-  imports: [ReactiveFormsModule, AlertComponent, NgClass, AuthNavbarComponent],
+  imports: [ReactiveFormsModule, AlertComponent, NgClass],
   templateUrl: './signup.component.html',
   styleUrl: './signup.component.scss'
 })

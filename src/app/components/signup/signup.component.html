@@ -5,7 +5,6 @@
         <h2 class="text-center fw-bold mb-4">Create Account 🚀</h2>
 
         <form [formGroup]="register" (ngSubmit)="sendData()">
-
           <!-- Name -->
           <div class="mb-3">
             <input
@@ -20,11 +19,12 @@
                 'is-invalid':
                   register.get('name')?.errors &&
                   (register.get('name')?.touched ||
-                    register.get('name')?.dirty)
+                    register.get('name')?.dirty),
               }"
               placeholder="Enter your full name"
             />
             <app-alert
+              class="p-1"
               [formName]="register"
               [controlName]="'name'"
             ></app-alert>
@@ -39,6 +39,7 @@
               placeholder="Enter your email"
             />
             <app-alert
+              class="p-1"
               [formName]="register"
               [controlName]="'email'"
             ></app-alert>
@@ -53,6 +54,7 @@
               placeholder="Enter your password"
             />
             <app-alert
+              class="p-1"
               [formName]="register"
               [controlName]="'password'"
             ></app-alert>
@@ -67,15 +69,16 @@
               placeholder="Confirm your password"
             />
             <app-alert
+              class="p-1"
               [formName]="register"
               [controlName]="'rePassword'"
             ></app-alert>
           </div>
 
-          @if(errorMessage){
-          <div class="alert alert-danger py-2">
-            {{ errorMessage }}
-          </div>
+          @if (errorMessage) {
+            <div class="alert alert-danger py-2">
+              {{ errorMessage }}
+            </div>
           }
 
           <button
@@ -98,7 +101,6 @@
               Login
             </a>
           </p>
-
         </form>
       </div>
     </div>
